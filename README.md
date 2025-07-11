@@ -1,39 +1,131 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# bhawarth_custom_package
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
+A custom Flutter package by **Bhawarth Padwal** providing reusable, theme-aware UI widgets (buttons, text fields, checklists) to speed up your app development.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
+---
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+## ✨ Features
 
-## Features
+- Customizable elevated button with styling and tap callback
+- Input text field with hint, label, icons, and keyboard type
+- Dynamic checklist with checkboxes and change handlers
+- Fully theme-aware (adapts to `ThemeData`)
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+---
 
-## Getting started
+## 📦 Installation
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+Add this to your `pubspec.yaml` under `dependencies:` (update the path as needed):
 
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
-```dart
-const like = 'sample';
+```yaml
+dependencies:
+  bhawarth_custom_package:
+    path: ../bhawarth_custom_package
 ```
 
-## Additional information
+Then run:
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+```bash
+flutter pub get
+```
+
+---
+
+## 🚀 Usage
+
+### ✅ Custom Button
+
+```dart
+BhawarthCustomPackage.showCustomButton1(
+  context: context,
+  buttonText: 'Click Me',
+  bgColor: Colors.blue,
+  cornerRadius: 12,
+  buttonHeight: 50,
+  buttonWidth: 200,
+  onTap: () => print('Tapped!'),
+);
+```
+
+### ✅ Custom Text Field
+
+```dart
+final controller = TextEditingController();
+
+BhawarthCustomPackage.showCustomTextField1(
+  context: context,
+  controller: controller,
+  hintText: 'Enter your name',
+  labelText: 'Name',
+  prefixIcon: Icons.person,
+);
+```
+
+### ✅ Custom Checklist
+
+```dart
+final options = ['Option A', 'Option B', 'Option C'];
+final selectedValues = [true, false, false];
+
+BhawarthCustomPackage.showCustomChecklist(
+  context: context,
+  options: options,
+  selectedValues: selectedValues,
+  onChanged: (index, value) {
+    setState(() {
+      selectedValues[index] = value;
+    });
+  },
+);
+```
+
+---
+
+## 🧪 Testing
+
+Basic widget tests are included under the `test/` directory.
+
+To run all tests:
+
+```bash
+flutter test
+```
+
+---
+
+## 📄 License
+
+MIT License  
+© 2025 Bhawarth Padwal
+
+---
+
+## 🙋‍♂️ Author
+
+Bhawarth Padwal  
+📧 bhawarth@example.com <!-- Replace with your real email -->  
+🔗 [LinkedIn](#) <!-- Optional: add your LinkedIn URL -->
+
+---
+
+## 🤝 Contributing
+
+Pull requests, feedback, and improvements are welcome!
+
+---
+
+## 🔮 Coming Soon
+
+- Custom toggle switch
+- Custom radio group
+- Loading shimmer widgets
+- Layout helpers
+
+---
+
+Let me know if you also want a:
+- `CHANGELOG.md`
+- `LICENSE`
+- Published version for `pub.dev`
+
+I'll generate them for you in the correct structure.
