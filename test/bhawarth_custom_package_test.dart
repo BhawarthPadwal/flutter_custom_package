@@ -29,7 +29,7 @@ void main() {
       await tester.pumpWidget(
         MaterialApp(
           home: Scaffold(
-            body: BhawarthCustomPackage.showCustomButton1(
+            body: showCustomButton1(
               context: context,
               buttonText: testText,
               bgColor: testColor,
@@ -76,7 +76,7 @@ void main() {
       await tester.pumpWidget(
         MaterialApp(
           home: Scaffold(
-            body: BhawarthCustomPackage.showCustomTextField1(
+            body: showCustomTextField1(
               context: context,
               controller: controller,
               hintText: hintText,
@@ -115,7 +115,7 @@ void main() {
       await tester.pumpWidget(
         MaterialApp(
           home: Scaffold(
-            body: BhawarthCustomPackage.showCustomChecklist(
+            body: showCustomChecklist(
               context: context,
               options: options,
               selectedValues: selectedValues,

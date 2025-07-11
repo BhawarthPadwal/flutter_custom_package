@@ -36,7 +36,7 @@ flutter pub get
 ### ✅ Custom Button
 
 ```dart
-BhawarthCustomPackage.showCustomButton1(
+showCustomButton1(
   context: context,
   buttonText: 'Click Me',
   bgColor: Colors.blue,
@@ -52,7 +52,7 @@ BhawarthCustomPackage.showCustomButton1(
 ```dart
 final controller = TextEditingController();
 
-BhawarthCustomPackage.showCustomTextField1(
+showCustomTextField1(
   context: context,
   controller: controller,
   hintText: 'Enter your name',
@@ -64,17 +64,15 @@ BhawarthCustomPackage.showCustomTextField1(
 ### ✅ Custom Checklist
 
 ```dart
-final options = ['Option A', 'Option B', 'Option C'];
-final selectedValues = [true, false, false];
+final options = ['Option 1', 'Option 2', 'Option 3'];
+final selectedValues = [true, false, true];
 
-BhawarthCustomPackage.showCustomChecklist(
+showCustomChecklist(
   context: context,
   options: options,
   selectedValues: selectedValues,
   onChanged: (index, value) {
-    setState(() {
-      selectedValues[index] = value;
-    });
+    // handle change
   },
 );
 ```
@@ -83,7 +81,7 @@ BhawarthCustomPackage.showCustomChecklist(
 
 ## 🧪 Testing
 
-Basic widget tests are included under the `test/` directory.
+Basic widget tests are included under the `test/` directory, especially in `test/bhawarth_custom_package_test.dart`.
 
 To run all tests:
 
@@ -103,8 +101,8 @@ MIT License
 ## 🙋‍♂️ Author
 
 Bhawarth Padwal  
-📧 bhawarthpadwal7@gmail.com <!-- Replace with your real email -->  
-🔗 [LinkedIn](#) <!-- Optional: add your LinkedIn URL -->
+📧 bhawarthpadwal7@gmail.com  
+🔗 [LinkedIn](#)
 
 ---
 
