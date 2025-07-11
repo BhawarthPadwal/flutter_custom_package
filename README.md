@@ -103,7 +103,7 @@ MIT License
 ## 🙋‍♂️ Author
 
 Bhawarth Padwal  
-📧 bhawarth@example.com <!-- Replace with your real email -->  
+📧 bhawarthpadwal7@gmail.com <!-- Replace with your real email -->  
 🔗 [LinkedIn](#) <!-- Optional: add your LinkedIn URL -->
 
 ---
