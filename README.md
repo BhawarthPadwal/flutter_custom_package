@@ -1,4 +1,4 @@
-# bhawarth_custom_package
+# flutter_custom_package
 
 A custom Flutter package by **Bhawarth Padwal** providing reusable, theme-aware UI widgets (buttons, text fields, checklists) to speed up your app development.
 
